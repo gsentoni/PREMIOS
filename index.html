@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premios - Guillermo Sentoni</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 720px;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    color: #f8fafc;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  p.subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+  .cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  a.card {
+    display: block;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 28px 20px;
+    text-decoration: none;
+    color: #f1f5f9;
+    transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  a.card:hover {
+    transform: translateY(-4px);
+    border-color: #6366f1;
+    background: #253552;
+  }
+  a.card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+  a.card .name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  footer {
+    margin-top: 48px;
+    color: #64748b;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Premios</h1>
+    <p class="subtitle">Modelos 3D interactivos de los trofeos</p>
+    <div class="cards">
+      <a class="card" href="Premio_Sadosky_Calidad.html">
+        <span class="icon">🏆</span>
+        <span class="name">Premio Sadosky<br>Calidad</span>
+      </a>
+      <a class="card" href="Premio_Sadosky_Inclusion.html">
+        <span class="icon">🏆</span>
+        <span class="name">Premio Sadosky<br>Inclusión</span>
+      </a>
+      <a class="card" href="Premio_LaTinatec-3d.html">
+        <span class="icon">🏆</span>
+        <span class="name">Premio<br>LaTinatec</span>
+      </a>
+    </div>
+    <footer>Guillermo B. Sentoni</footer>
+  </div>
+</body>
+</html>
